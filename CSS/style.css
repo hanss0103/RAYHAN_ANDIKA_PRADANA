@@ -1,0 +1,417 @@
+ /* MENGINPOR DARI LUAR FONT FAMILY ROBOTO */
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* PENGATURAN AGAR SCROLLBAR TIDAK KELIHATAN */
+::-webkit-scrollbar {
+    display: none;
+}
+
+body{
+    position: relative;
+    background-image: url('../ASSETS/IMAGE/bg.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* MENCIPTAKAN OVERLAY DI ATAS BACKGROUND */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+#searchForm{
+    margin-top: 10px;
+    /* margin-right: 10%;    */
+    height: 40px;
+    display: flex;
+    cursor: pointer;
+    background: rgb(210, 232, 247);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+#searchForm input{
+    width: 150px;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+}
+
+#searchForm .bx-search{
+    color: rgb(41, 137, 197);
+    font-size: 20px;
+}
+
+  /* UNTUK VIDEO HOME */
+video{
+    margin-top: 100px;
+    margin-left: 10vh;
+    width: 75%;
+    border: solid cadetblue;
+    border-radius: 20px;
+}
+
+/* TULISAN COOMING SOON */
+h3 {
+    font-size: xx-large;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    text-shadow: 2px 2px 1px black;
+    color: rgba(225, 225, 225 ,0.8);
+    position: relative;
+    top: -100px;
+    margin-left: 125vh;
+    z-index: 0;
+}
+
+
+
+/* ------------------------------------------------ */
+/* UNTUK CARD ANIME */
+figure{
+    width: 200px;
+    height: 400px;
+    border: 2px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+img {
+    width: max-content;
+    height: 250px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+/* Animasi saat cursor menyentuh gambar */
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 3px 3px 5px lightcyan;
+}
+
+figcaption, h4{
+    color: rgb(42, 137, 200);
+}
+
+/* Animasi saat cursor menyentuh judul */
+h4:hover{
+    transform: scale(1.03);
+    text-shadow: 0 0 1.5px lightcyan;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+/* Animasi saat cursor menyentuh Watch Trailer */
+figcaption a:hover{
+    text-shadow: 0 0 10px white;
+}
+
+.grup {
+    color: white;
+    width: max-content;
+    margin-left: 15px;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: rgb(131, 28, 28);
+}
+
+.upcoming img{
+    width: 175px;
+}
+
+.recomend img{
+    width: 175px;
+}
+
+.content{
+    margin-top: 80px;
+}
+
+.content .cont{
+    padding-top: 100px;
+}
+
+/*  SCROLL BAGIAN SEASON NOW */
+.season{
+    display: flex;
+    width: 175vh;
+    margin-left: 10px;
+    overflow: scroll;
+    overflow-y: hidden;
+}
+
+/*  SCROLL BAGIAN RECOMENDED */
+.recomend{
+    display: flex;
+    width: 175vh;
+    margin-left: 10px;
+    overflow: scroll;
+    overflow-y: hidden;
+}
+
+/*  SCROLL BAGIAN UPCOMING */
+.upcoming{
+    display: flex;
+    width: 175vh;
+    margin-left: 10px;
+    overflow: scroll;
+    overflow-y: hidden;
+}
+
+/* ------------------------------------------ */
+
+/* RESPONSIVE */
+
+/* MOBILE SMALL */
+@media (max-width: 480px) {  
+    .web {
+        left: 0;
+        margin-left: 3px;
+        transition: 1s;
+    }
+
+    .logo img {
+        display: none;
+    }
+
+    #searchForm input{
+        width: 0;
+    }
+
+    video {
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+    h3 {
+        font-size: 15px;
+        top: -50px;
+        margin-left: 65%;
+    }
+
+    figure {
+        width: 150px;
+        height: 150px;
+    }
+
+    img {
+        height: 100px;
+    }
+
+    .upcoming img{
+        width: 70px;
+    }
+    
+    .recomend img{
+        width: 70px;
+    }
+
+    .top img{
+        width: 70px;
+    }
+
+    figcaption, h4{
+        font-size: 10px;
+    }
+
+    .season, .recomend, .upcoming {
+        width: 90vw;
+    }
+
+    .top1{
+        display: none;
+    }
+}
+
+/* MEDIUM MOBILE*/
+@media (min-width: 481px) and (max-width: 768px) {
+    video {
+        width: 70%;
+        margin-left: 5%;
+    }
+    
+    h3 {
+        font-size: 15px;
+        top: -50px;
+        margin-left: 55%;
+    }   
+
+    figure {
+        width: 180px;
+        height: 350px;
+    }
+
+    img {
+        height: 220px;
+    }
+
+    .season, .recomend, .upcoming {
+        width: 65vh;
+    }
+}
+
+/* TABLET */
+@media (min-width: 800px) and (max-width: 888px) {
+    video {
+        width: 65%;
+        margin-left: 5%;
+    }
+    
+    h3 {
+        font-size: 15px;
+        top: -50px;
+        margin-left: 55%;
+    }   
+
+    figure {
+        width: 180px;
+        height: 350px;
+    }
+
+    img {
+        height: 220px;
+    }
+
+    .upcoming img{
+        width: 150px;
+    }
+    
+    .recomend img{
+        width: 150px;
+    }
+
+    .season, .recomend, .upcoming {
+        width: 60vh;
+    }
+}
+
+/* LAPTOP SMALL */
+@media (min-width: 890px) and (max-width: 1024px) {
+    video {
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+    h3 {
+        font-size: xx-large;
+        top: -90px;
+        margin-left: 15%;
+    }
+
+    figure {
+        width: 200px;
+        height: 400px;
+    }
+
+    img {
+        height: 250px;
+    }
+
+    .season, .recomend, .upcoming {
+        width: 175vh;
+    }
+}
+
+/* DEKSTOP */
+@media (min-width: 1035px) and (max-width: 1114px) {
+    video {
+        width: 75%;
+        margin-left: 5%;
+    }
+    
+    h3 {
+        font-size: 15px;
+        top: -50px;
+        margin-left: 65%;
+    }   
+
+    figure {
+        width: 200px;
+        height: 400px;
+    }
+
+    img {
+        height: 250px;
+    }
+
+    .season, .recomend, .upcoming {
+        width: 145vh;
+    }
+}
+
+/* LARGE SCREEN */
+@media (min-width: 1200px) and (max-width: 1300px) {
+    video {
+        width: 70%;
+        margin-left: 5%;
+    }
+    
+    h3 {
+        font-size: 20px;
+        top: -50px;
+        margin-left: 60%;
+    }   
+
+    figure {
+        width: 200px;
+        height: 400px;
+    }
+
+    img {
+        height: 250px;
+    }
+
+    .season, .recomend, .upcoming {
+        width: 175vh;
+    }
+}
+@media (min-width: 1310px) and (max-width: 1450px) {
+    video {
+        width: 75%;
+        margin-left: 5%;
+    }
+    
+    h3 {
+        font-size: 20px;
+        top: -50px;
+        margin-left: 65%;
+    }   
+
+    figure {
+        width: 200px;
+        height: 400px;
+    }
+
+    img {
+        height: 250px;
+    }
+
+    .season, .recomend, .upcoming {
+        width: 230vh;
+    }
+}

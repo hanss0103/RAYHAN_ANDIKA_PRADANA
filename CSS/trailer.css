@@ -1,0 +1,84 @@
+/* MENGINPOR DARI LUAR FONT FAMILY ROBOTO */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body{
+    position: relative;
+    background-image: url('../ASSETS/IMAGE/bg.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+/* MENCIPTAKAN OVERLAY DI ATAS BACKGROUND */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+#judul{
+    margin-top: 150px;
+    font-size: 50px;
+    color: rgb(42, 137, 200);
+}
+
+#show{
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+/* RESPONSIVE */
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+    main{
+        width: 100%;
+        
+    }
+    #judul{
+        margin-top: 150px;
+        font-size: 20px;
+        color: rgb(42, 137, 200);
+    }
+    
+    #show{
+        height: 100vw;
+        margin-top: 10px;
+    }
+    
+    iframe{
+        width: 300px;
+        height: 150px;
+    }
+}
+
+/* MEDIUM MOBILE */
+@media (min-width: 768px) and (max-width: 890px) {
+    #show{
+        height: 100vw;
+        margin-top: 10px;
+    }
+
+    iframe{
+        width: 550px;
+        height: 325px;
+    }
+}

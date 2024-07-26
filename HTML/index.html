@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HANnime</title>
+    <link rel="shortcut icon" type="icon" href="../ASSETS/IMAGE/logo.jpg">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/headermain.css">
+    <link rel="stylesheet" href="../CSS/aside.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <!-- TAG a UNTUK KE HOMEPAGE / INDEX.HTML -->
+        <div class="logonama">
+            <a href="./index.html">
+                <div class="logo">
+                    <img src="../ASSETS/IMAGE/logo.jpg" alt="">
+                </div>
+                <h1 class="web"><i>HANnime</i></h1>
+            </a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li class="nav-link select">
+                    <ul href="">SELECT
+                        <span>
+                            <i class='bx bx-chevron-down'></i>
+                        </span>
+                    </ul>
+                    <ul class="drop">
+                        <li><a href="#season">SEASON NOW</a></li>
+                        <li><a href="#recomend">RECOMENDED</a></li>
+                        <li><a href="#upcoming">UPCOMING</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form id="searchForm" action="./search.html">
+                <input type="text" id="searchInput" placeholder="Search Anime">
+                <a id="bt" href="./search.html">
+                    <i class='bx bx-search'></i>
+                </a>   
+            </form>
+        </nav>
+    </header>
+
+    <main>
+        <!-- UNTUK VIDEO PREVIEW COMING SOON -->
+        <div class="video">
+            <video src="../ASSETS/VIDEO/solo level.mp4" muted autoplay loop poster="../ASSETS/IMAGE/poster.jpg"></video>
+            <h3>COMING SOON</h3>
+        </div>
+
+        <!-- UNTUK CONTEN ANIME / CARD ANIME -->
+        <div class="content">
+            <aside class="top1">
+                <div class="top-content">
+                    <h2 class="title-top">TOP ANIME</h2>
+                    <div class="top"></div>
+                </div>
+            </aside>
+            <div id="season" class="cont">
+                <h2 class="grup">SEASON NOW</h2>
+                <div class="season"></div>
+            </div>
+
+            <div id="recomend" class="cont">
+                <h2 class="grup" id="recomend">RECOMENDED</h2>
+                <div class="recomend"></div>
+            </div>
+
+            <div id="upcoming" class="cont">
+                <h2 class="grup" id="upcoming">SEASON UPCOMING</h2>
+                <div class="upcoming"></div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 HANnime. All rights reserved.</p>
+            <p>Follow us on
+                <a href="https://x.com/HannnSSS_p" class="social-link" target="_blank">Twitter</a>,
+                <a href="https://www.facebook.com/profile.php?id=61562073961779" class="social-link" target="_blank">Facebook</a>,
+                <a href="https://www.instagram.com/rayhandika_p/" class="social-link" target="_blank">Instagram</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="../JS/main.js"></script>
+    <script src="../JS/search.js"></script>
+    <script src="../JS/header.js"></script>
+</body>
+
+</html>

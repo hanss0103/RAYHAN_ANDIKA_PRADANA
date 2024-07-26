@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    position: relative;
+    background-image: url('../ASSETS/IMAGE/bg.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* MENCIPTAKAN OVERLAY DI ATAS BACKGROUND */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+h2 {
+    margin-top: 15%;
+    color: white;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: white;
+}
+
+#searchForm .bx-search {
+    color: rgb(41, 137, 197);
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+input[type="text"] {
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 30px;
+}
+
+.results-Container {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.results-Container #results {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    width: 80%;
+}
+
+figure {
+    width: 200px;
+    height: 400px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+img {
+    width: 175px;
+    height: 250px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+/* Animasi saat cursor menyentuh gambar */
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 3px 3px 5px lightcyan;
+}
+
+figcaption, h4 {
+    color: rgb(42, 137, 200);
+}
+
+/* Animasi saat cursor menyentuh judul */
+h4:hover {
+    transform: scale(1.03);
+    text-shadow: 0 0 1.5px lightcyan;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+/* Animasi saat cursor menyentuh Watch Trailer */
+figcaption a:hover {
+    text-shadow: 0 0 10px white;
+}

@@ -1,0 +1,153 @@
+/* MENGINPOR DARI LUAR FONT FAMILY ROBOTO */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body{
+    position: relative;
+    background-image: url('../ASSETS/IMAGE/bg.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* MENCIPTAKAN OVERLAY DI ATAS BACKGROUND */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+/* CSS UNTUK BAGIAN DETAIL ANIME */
+.detail {
+    display: flex;
+    margin-bottom: 110px;
+    padding: 30px;
+    cursor: default;
+}
+
+.detail img{
+    width: 250px;
+    aspect-ratio: 1/1.7;
+    border: solid rgb(35, 49, 74);
+    border-radius: 3px;
+    box-shadow: 0 0 15px white;
+}
+
+a{
+    color: aqua;
+}
+
+.desc{
+    position: absolute;
+    left: 300px;
+    text-align: justify;
+    padding-right: 90px ;
+}
+
+h4, p{
+    color: rgb(132, 150, 166);
+}
+
+h2{
+    color: rgb(42, 137, 200);
+}
+
+.h1{
+    margin-top: 120px;
+    text-align: center;
+    padding: 10px;
+    color: rgb(89, 190, 190);
+    cursor: default;
+}
+
+/* RESPONSIVE */
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+    .web {
+        margin-left: 3px;
+        transition: 1s;
+    }
+
+    .logo img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-left: 40px;
+    }
+
+    .detail {
+        width: 100%;
+        display: block;
+        padding: 30px;
+        cursor: default;
+    }
+
+    .desc{
+        position: relative;
+        left: 0;
+        text-align: justify;
+        padding-right: 0;
+    }
+
+    .detail img{
+        width: min-content;
+        aspect-ratio: 1/1.4;
+        border: solid rgb(35, 49, 74);
+        border-radius: 3px;
+        box-shadow: 0 0 15px white;
+    }
+}
+
+/* MEDIUM - LARGE MOBILE */
+@media (min-width: 490px) and (max-width: 1112px) {
+    .web {
+        margin-left: 3px;
+        transition: 1s;
+    }
+
+    .logo img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-left: 40px;
+    }
+
+    .detail {
+        width: 100%;
+        display: block;
+        padding: 30px;
+        cursor: default;
+    }
+
+    .desc{
+        position: relative;
+        left: 0;
+        text-align: justify;
+        padding-right: 0;
+    }
+
+    .detail img{
+        width: min-content;
+        aspect-ratio: 1/1.4;
+        border: solid rgb(35, 49, 74);
+        border-radius: 3px;
+        box-shadow: 0 0 15px white;
+    }
+}

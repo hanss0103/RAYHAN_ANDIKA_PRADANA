@@ -1,0 +1,86 @@
+/* MENGINPOR DARI LUAR FONT FAMILY ROBOTO */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* CSS UNTUK HEADER */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: white;
+    background-color: #27476c;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+/* UNTUK HEADER SAAT SCROLL KE BAWAH */
+header.sticky{
+    padding: 5px;
+    background-color: #2f7d9b;
+}
+
+.logonama {
+    margin: 0;
+    padding: 0;
+    margin-right: 15px;
+}
+
+/* UNTUK ANCHOR */
+.logonama a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+.web {
+    margin-left: 20px;
+    transition: 1s;
+}
+
+/* HOVER UNTUK NAMA WEB */
+.web:hover {
+    text-shadow: 0 0 25px rgb(255, 255, 255);
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 40px;
+}
+
+/* UNTUK NAV SELECT DAN ABOUT */
+
+nav{
+    margin-right: 4%;
+}
+
+.nav-links{
+    margin-left: 700px;
+    margin-top: 10px;
+    display: flex;
+    gap: 5rem;
+}
+
+.nav-link a{
+    color: white;
+}
+
+.nav-link:hover{
+    transform: scale(1.09);
+    text-shadow: 0 4px 20px white;
+}

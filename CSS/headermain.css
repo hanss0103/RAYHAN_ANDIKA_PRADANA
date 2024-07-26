@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+/* CSS UNTUK HEADER */
+header {
+    position: fixed;
+    width: 100%;
+    color: white;
+    background-color: #27476c;
+    padding: 20px 10px;
+    display: flex;
+    z-index: 4;
+    transition: 0.5s;
+    justify-content: space-between;
+}
+
+/* UNTUK HEADER SAAT SCROLL KE BAWAH */
+header.sticky{
+    padding: 5px;
+    background-color: #2f7d9b;
+}
+
+.logonama {
+    margin: 0;
+    padding: 0;
+    margin-right: 15px;
+}
+
+/* UNTUK ANCHOR */
+.logonama a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+.web {
+    margin-left: 20px;
+    transition: 1s;
+}
+
+/* HOVER UNTUK NAMA WEB */
+.web:hover {
+    text-shadow: 0 0 25px rgb(255, 255, 255);
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 40px;
+}
+
+/* UNTUK NAV SELECT DAN ABOUT */
+nav{
+    display: flex;
+    margin-right: 4%;
+}
+
+.nav-links{
+    margin-top: 10px;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link, .drop li{
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+/* UNTUK DROP DOWN MENU */
+.drop{
+    position: absolute;
+    margin: 0.5rem -0.5rem;
+    background: rgb(63, 88, 88);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    font-size: 12px;
+    display: none;
+}
+
+.nav-link:hover{
+    transform: scale(1.09);
+    text-shadow: 0 4px 20px white;
+}
+
+
+/* SAAT CURSOR MENYENTUH SELECT AKAN MEMUNCULKAN DROP MENU */
+.select:hover .drop{
+    display: block;
+}
+
+/* UNTUK ICON ARROW */
+.select .bx-chevron-down{
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out all;
+}
+
+/* ANIMASI ROTASI ARROW */
+.select:hover .bx-chevron-down{
+    transform: rotate(180deg);
+}
+
+.drop li:hover{
+    background: #27476c;
+    border-radius: 5px;
+}
+
